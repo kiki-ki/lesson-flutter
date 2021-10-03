@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Colors.white,
       ),
-      home: RandomWords(),
+      home: const RandomWords(),
     );
   }
 }
@@ -38,7 +38,7 @@ class _RandomWordsState extends State<RandomWords> {
         actions: [
           IconButton(
             onPressed: _pushSaved,
-            icon: Icon(Icons.list),
+            icon: const Icon(Icons.list),
           )
         ],
       ),
@@ -67,7 +67,7 @@ class _RandomWordsState extends State<RandomWords> {
 
           return Scaffold(
             appBar: AppBar(
-              title: Text('Saved Suggestions'),
+              title: const Text('Saved Suggestions'),
             ),
             body: ListView(
               children: divided,
